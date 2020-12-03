@@ -1,0 +1,15 @@
+{
+    "name": "Countdown",
+    "short_name": "Countdown",
+    "theme_color": "#00bdc3",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": ".",
+    "icons": [
+        {
+          "src": "icon.png",
+          "type": "image/png",
+          "sizes": "225x225"
+        }
+    ]
+  }
