@@ -1,4 +1,18 @@
 var countDate = new Date('Jan 1, 2021 00:00:00').getTime();
+
+window.addEventListener('load', e =>{
+    newYear();
+
+    if('serviceWorker' in navigator){
+        try {
+            navigator.serviceWorker.register('sw.js');
+            console.log('SW registered');
+        } catch (error) {
+            console.log('SW reg failed');
+        }
+    }
+});
+
 function newYear(){
     var now = new Date().getTime();
     gap = countDate - now;
