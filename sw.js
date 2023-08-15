@@ -4,7 +4,7 @@ const staticAssets = [
     './script.js'
 ];
 
-self.addEventListener('install', async event =>{
+self.addEventListener('install', async event => {
     const cache = await caches.open('pwa-static');
     cache.addAll(staticAssets);
 });
@@ -13,9 +13,9 @@ self.addEventListener('fetch', event => {
     const req = event.request;
     const url = new URL(req.url);
 
-    if(url.origin == location.origin){
+    if(url.origin == location.origin) {
         event.respondWith(cacheFirst(req));
-    }else{
+    } else {
         event.respondWith(networkFirst(req));
     }
 });

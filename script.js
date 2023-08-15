@@ -1,9 +1,9 @@
 var countDate = new Date('Jan 01, 2024 00:00:00').getTime();
 
-window.addEventListener('load', e =>{
+window.addEventListener('load', e => {
     newYear();
 
-    if('serviceWorker' in navigator){
+    if ('serviceWorker' in navigator) {
         try {
             navigator.serviceWorker.register('sw.js');
             console.log('SW registered');
@@ -13,7 +13,7 @@ window.addEventListener('load', e =>{
     }
 });
 
-function newYear(){
+function newYear () {
     var now = new Date().getTime();
     gap = countDate - now;
     var second = 1000;
@@ -29,6 +29,7 @@ function newYear(){
     document.getElementById('minute').innerText=m;
     document.getElementById('second').innerText=s;
 }
-setInterval(function(){
+
+setInterval(function() {
     newYear();
-},1000)
+}, 1000)

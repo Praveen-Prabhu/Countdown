@@ -7,9 +7,9 @@
     "start_url": ".",
     "icons": [
         {
-          "src": "icon.png",
-          "type": "image/png",
-          "sizes": "225x225"
+            "src": "icon.png",
+            "type": "image/png",
+            "sizes": "225x225"
         }
     ]
-  }
+}
