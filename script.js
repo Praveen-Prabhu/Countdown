@@ -1,4 +1,4 @@
-var countDate = new Date('Jan 01, 2024 00:00:00').getTime();
+var countDate = new Date('Feb 01, 2025 00:00:00').getTime();
 
 window.addEventListener('load', e => {
     newYear();
